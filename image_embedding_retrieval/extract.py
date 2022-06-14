@@ -84,5 +84,7 @@ if __name__ == "__main__":
       if not os.path.exists(config.emb_save_path):
             os.makedirs(config.emb_save_path)
       np.save(  os.path.join(config.emb_save_path,'embeds.npy'),output)
+      with open(os.path.join(config.emb_save_path, 'img_names.json'), 'w') as f:
+        json.dump(img_paths , f)
   if args.ann:
     gen_ann(config)

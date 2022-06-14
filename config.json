@@ -1,5 +1,5 @@
 {
-    "gpu": -1,
+    "gpu": "-1",
     "img_root": "/Users/yhchen/Documents/code/git_yh/exp/imgs",
     "emb_save_path": "/Users/yhchen/Documents/code/git_yh/exp/embs",
     "ann": {

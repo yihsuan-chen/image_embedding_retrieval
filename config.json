@@ -1,0 +1,18 @@
+{
+    "gpu": -1,
+    "img_root": "/Users/yhchen/Documents/code/git_yh/exp/imgs",
+    "emb_save_path": "/Users/yhchen/Documents/code/git_yh/exp/embs",
+    "ann": {
+        "tree_num": 100,
+        "idx_save_path": "/Users/yhchen/Documents/code/git_yh/exp/annoy_data"
+    },
+    "emb": {
+        "input_shape": [
+            224,
+            224,
+            3
+        ],
+        "backbone": "resnet_50",
+        "weight_init": "imagenet"
+    }
+}

@@ -4,9 +4,11 @@ from tqdm import tqdm
 import numpy as np
 import argparse
 import json
-import os
+import os,sys
+sys.path.insert(
+    0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '../'))
 import tensorflow as tf
-from emb_pred.emb_predictor import EmbPredictor
+from image_embedding_retrieval.emb_pred.emb_predictor import EmbPredictor
 
 
 

@@ -1,12 +1,15 @@
-from emb_pred.emb_predictor import EmbPredictor
+import os,sys
+sys.path.insert(
+    0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '../'))
+from image_embedding_retrieval.emb_pred.emb_predictor import EmbPredictor
 from annoy import AnnoyIndex
 from box import Box
 import numpy as np
 import cv2
-import os
 import argparse
 import json
 import time
+
 
 
 def retrieve(config, img_path, k):
@@ -32,7 +35,6 @@ def retrieve(config, img_path, k):
     img_names = idxs_to_names(
         os.path.join(config.emb_save_path, 'img_names.json'), idxs)
     dists = np.asarray(dists)
-    print(img_names)
     return img_names, dists
 
 

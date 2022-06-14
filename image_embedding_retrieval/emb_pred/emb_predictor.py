@@ -1,7 +1,7 @@
 
 import tensorflow_addons as tfa
 import tensorflow as tf
-from emb_pred.backbone_factory import BackboneFactory
+from image_embedding_retrieval.emb_pred.backbone_factory import BackboneFactory
 
 optimizer = tfa.optimizers.SGDW
 
